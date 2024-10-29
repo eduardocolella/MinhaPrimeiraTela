@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>MainForm.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #d55fde; font-style: italic;}
+.s1 { color: #bbbbbb;}
+.s2 { color: #5c6370; font-style: italic;}
+.s3 { color: #89ca78;}
+</style>
+</head>
+<body bgcolor="#282c34">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+MainForm.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">javax.swing.*;</span>
+
+<span class="s0">public class </span><span class="s1">MainForm {</span>
+    <span class="s0">private </span><span class="s1">JTextField txtNome;</span>
+    <span class="s0">private </span><span class="s1">JLabel lblNome;</span>
+    <span class="s0">private </span><span class="s1">JButton btnValidar;</span>
+    <span class="s0">private </span><span class="s1">JLabel txtResultado;</span>
+    <span class="s0">private </span><span class="s1">JPanel mainPanel;</span>
+
+    <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+
+        <span class="s2">//Cria a minha tela (TV)</span>
+        <span class="s1">JFrame frame = </span><span class="s0">new </span><span class="s1">JFrame(</span><span class="s3">&quot;Minha primeira tela&quot;</span><span class="s1">);</span>
+        <span class="s2">//Mostra qual painel vai ser assistido</span>
+        <span class="s1">frame.setContentPane(</span><span class="s0">new </span><span class="s1">MainForm().mainPanel);</span>
+        <span class="s1">frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</span>
+        <span class="s2">//Ajusta minha TV no tamanho do meu painel</span>
+        <span class="s1">frame.pack();</span>
+        <span class="s2">//frame.setSize(500, 500);</span>
+        <span class="s2">//ligar a tv</span>
+        <span class="s1">frame.setVisible(</span><span class="s0">true</span><span class="s1">);</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+</pre>
+</body>
+</html>
